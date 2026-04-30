@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="11">
+ <tileset firstgid="1" source="../textures/mc.tsx"/>
+ <tileset firstgid="625" source="../textures/avatar.tsx"/>
+ <layer id="1" name="bg" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzjZGBg4BzFo3gUj+JRPIpH8SgexVTDABndFRk=
+  </data>
+ </layer>
+ <layer id="2" name="walls" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjZWBgYB0gTC1ArFnD1V5cZo/aiypOaRqll3+xmT9q7+Cylx5l4WDy70iwl1ZxOVj9O9LsHQgMAAB9A04=
+  </data>
+ </layer>
+ <objectgroup id="4" name="obj">
+  <object id="10" gid="625" x="410.5" y="292.5" width="32" height="32"/>
+ </objectgroup>
+</map>
