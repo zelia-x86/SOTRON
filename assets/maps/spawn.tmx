@@ -4,15 +4,15 @@
  <tileset firstgid="625" source="../textures/avatar.tsx"/>
  <layer id="1" name="bg" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJzjZGBg4BzFo3gUj+JRPIpH8SgexVTDABndFRk=
+   eJzjZGBg4BzFo2EwmgZG08BoGhhNA6NpYDQNjKYBBmqFAQAZ3RUZ
   </data>
  </layer>
  <layer id="2" name="walls" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjZWBgYB0gTC1ArFnD1V5cZo/aiypOaRqll3+xmT9q7+Cylx5l4WDy70iwl1ZxOVj9O9LsHQgMAAB9A04=
+   eJxjZWBgYB0gTC1ArFnD1V5cZo/aixoOlKZReoUzNvNH7R1c4UyPsnAw+Xck2EuruBys/h1p9rIOAAYAAH0DTg==
   </data>
  </layer>
  <objectgroup id="4" name="obj">
-  <object id="10" gid="625" x="410.5" y="292.5" width="32" height="32"/>
+  <object id="10" gid="625" x="31.787" y="296.25" width="32" height="32"/>
  </objectgroup>
 </map>

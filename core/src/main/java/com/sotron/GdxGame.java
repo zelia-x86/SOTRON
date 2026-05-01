@@ -7,7 +7,6 @@ import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.assets.loaders.resolvers.InternalFileHandleResolver;
-// import com.badlogic.gdx.assets.loaders.resolvers.InternalFileHandleResolver;
 import com.badlogic.gdx.graphics.FPSLogger;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
@@ -18,7 +17,6 @@ import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.sotron.assets.AssetService;
-// import io.github.com.quillraven.audio.AudioService;
 import com.sotron.screen.LoadingScreen;
 
 import java.util.HashMap;
@@ -89,7 +87,7 @@ public class GdxGame extends Game {
 
         super.render();
 
-        Gdx.graphics.setTitle("Mystic Tutorial - Draw Calls: " + glProfiler.getDrawCalls());
+        Gdx.graphics.setTitle("SOTRON - Draw Calls: " + glProfiler.getDrawCalls());
         fpsLogger.log();
     }
 

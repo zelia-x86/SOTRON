@@ -2,203 +2,39 @@
     "activeFile": "maps/spawn.tmx",
     "expandedProjectPaths": [
         ".",
-        "textures",
-        "avatar",
-        "maps"
+        "maps",
+        "textures"
     ],
+    "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
-        "avatar.tsx": {
-            "dynamicWrapping": false,
-            "scaleInDock": 4,
-            "scaleInEditor": 5.5
-        },
-        "avatar/Soldier.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "ijhbv.tsx": {
-            "dynamicWrapping": true,
-            "scaleInDock": 1,
-            "scaleInEditor": 5.5
-        },
-        "lkmn.tsx": {
-            "dynamicWrapping": true,
-            "scaleInDock": 1,
-            "scaleInEditor": 11
-        },
-        "maps/ggg.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 4
-        },
-        "maps/hb.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 11
-        },
-        "maps/hbh.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 11
-        },
-        "maps/hvb.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 8
-        },
-        "maps/iyugbh.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 8
-        },
-        "maps/jhbn.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 4
-        },
-        "maps/jhn.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 8
-        },
-        "maps/loko.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 8
-        },
-        "maps/mlk.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 8
-        },
-        "maps/nuik.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 4
-        },
-        "maps/qq.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 3
-        },
-        "maps/qqq.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 2
-        },
-        "maps/qqqw.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 3
-        },
-        "maps/qsas.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 5.5
-        },
-        "maps/qw.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 11
-        },
-        "maps/qwq.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 11
-        },
-        "maps/qwsad.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 3
-        },
-        "maps/sda.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 2
-        },
-        "maps/sdjn.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 4
-        },
-        "maps/sdsa.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 11
-        },
         "maps/spawn.tmx": {
-            "scale": 2,
+            "scale": 2.2261,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 329.5,
-                "y": 243.75
+                "x": 101.74745069853105,
+                "y": 240.3306230627555
             }
-        },
-        "maps/ssa.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 3
-        },
-        "maps/texture.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/tfgz.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 5.5
-        },
-        "maps/ujgb.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 11
-        },
-        "maps/wew.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 5.5
-        },
-        "maps/wqw.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/wwjw.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 2
-        },
-        "maps/wwkmsd.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "maps/yfgcfv.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 8
-        },
-        "maps/yhbhn.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 4
-        },
-        "olkjmn.tsx": {
-            "dynamicWrapping": true,
-            "scaleInDock": 1,
-            "scaleInEditor": 1
         },
         "textures/avatar.tsx": {
             "dynamicWrapping": true,
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "textures/mc.tsx": {
-            "dynamicWrapping": false
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         }
     },
-    "last.externalTilesetPath": "C:/Users/class/Desktop/SOTRON/assets/textures",
-    "last.imagePath": "C:/Users/class/Desktop/SOTRON/assets",
-    "map.lastUsedFormat": "tmx",
-    "map.layerDataFormat": "3",
-    "map.tileHeight": 16,
-    "map.tileWidth": 16,
     "openFiles": [
         "maps/spawn.tmx",
-        "maps/texture.tsx"
+        "textures/mc.tsx",
+        "textures/avatar.tsx"
     ],
     "project": "sotron.tiled-project",
-    "property.type": "float",
     "recentFiles": [
-        "maps/texture.tsx",
-        "maps/spawn.tmx",
-        "avatar.tsx",
-        "lkmn.tsx",
-        "ijhbv.tsx",
-        "olkjmn.tsx",
-        "maps/wew.tsx",
-        "maps/jhbn.tsx",
-        "maps/sdjn.tsx",
-        "maps/qq.tsx",
-        "maps/qw.tsx",
-        "maps/qqqw.tsx"
-    ],
-    "tileset.lastUsedFormat": "tsx",
-    "tileset.margin": 0,
-    "tileset.spacing": 0,
-    "tileset.tileSize": {
-        "height": 8,
-        "width": 8
-    },
-    "tileset.type": 1
+        "textures/avatar.tsx",
+        "textures/mc.tsx",
+        "maps/spawn.tmx"
+    ]
 }

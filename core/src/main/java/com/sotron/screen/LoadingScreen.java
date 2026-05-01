@@ -1,18 +1,19 @@
 package com.sotron.screen;
 
+import com.badlogic.ashley.core.Engine;
+import com.badlogic.ashley.core.EntitySystem;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.ScreenAdapter;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.badlogic.gdx.utils.Disposable;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.sotron.GdxGame;
 import com.sotron.assets.AssetService;
-// import com.sotron.asset.AtlasAsset;
-// import com.sotron.asset.SkinAsset;
-// import com.sotron.asset.SoundAsset;
 import com.sotron.assets.MapAsset;
+import com.sotron.systems.RenderSystem;
 
 public class LoadingScreen extends ScreenAdapter {
 
@@ -20,8 +21,8 @@ public class LoadingScreen extends ScreenAdapter {
     private final AssetService assetService;
     private final Viewport viewport;
     private final OrthographicCamera camera;
-    private final OrthogonalTiledMapRenderer mapRenderer;
     private final Batch batch;
+    private final Engine engine;
 
     public LoadingScreen(GdxGame game) {
         this.game = game;
@@ -29,7 +30,9 @@ public class LoadingScreen extends ScreenAdapter {
         this.viewport = game.getViewport();
         this.camera = game.getCamera();
         this.batch = game.getBatch();
-        this.mapRenderer = new OrthogonalTiledMapRenderer(null, GdxGame.UNIT_SCALE, this.batch);
+        this.engine = new Engine();
+
+        this.engine.addSystem(new RenderSystem(batch, viewport, assetService, camera));
     }
 
     /**
@@ -38,14 +41,13 @@ public class LoadingScreen extends ScreenAdapter {
     @Override
     public void show() {
         this.assetService.load(MapAsset.MAIN);
-        this.mapRenderer.setMap(this.assetService.get(MapAsset.MAIN));
-        // for (AtlasAsset atlasAsset : AtlasAsset.values()) {
-        //     assetService.queue(atlasAsset);
-        // }
-        // assetService.queue(SkinAsset.DEFAULT);
-        // for (SoundAsset soundAsset : SoundAsset.values()) {
-        //     assetService.queue(soundAsset);
-        // }
+        this.engine.getSystem(RenderSystem.class)
+            .setMap(this.assetService.get(MapAsset.MAIN));
+    }
+
+    @Override
+    public void hide () {
+        this.engine.removeAllEntities();
     }
 
     /**
@@ -53,24 +55,18 @@ public class LoadingScreen extends ScreenAdapter {
      */
     @Override
     public void render(float delta) {
-        this.viewport.apply();
-        this.batch.setColor(Color.WHITE);
-        this.mapRenderer.render();
-        this.mapRenderer.setView(this.camera);
+        delta = Math.min(delta, 1/30f);
+        this.engine.update(delta);
+
         super.render(delta);
-        this.mapRenderer.dispose();
-        // if (assetService.update()) {
-        //     Gdx.app.debug("LoadingScreen", "Finished loading assets");
-        //     createScreens();
-        //     this.game.removeScreen(this);
-        //     this.dispose();
-        //     // this.game.setScreen(MenuScreen.class);
-        // }
     }
 
-    private void createScreens() {
-        this.mapRenderer.dispose();
-        // this.game.addScreen(new GameScreen(this.game));
-        // this.game.addScreen(new MenuScreen(this.game));
+    @Override
+    public void dispose () {
+        for (EntitySystem system : this.engine.getSystems()) {
+            if (system instanceof Disposable disposableSystem) {
+                disposableSystem.dispose();
+            }            
+        }
     }
 }
