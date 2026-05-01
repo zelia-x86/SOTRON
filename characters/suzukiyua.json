@@ -1,0 +1,14 @@
+{
+  "name": "鈴木 優空",
+  "lvl": 1,
+  "hp": 22,
+  "mp": 18,
+  "attack": 6,
+  "defence": 1,
+  "sattack": 16,
+  "sdefence": 4,
+  "luck": 0.0,
+  "attrib": "事故属性",
+  "tool": "給料",
+  "description": "二つ名:車も薙ぎ倒す強靭な肉体美,慰謝料とバイト先からの給料でなんとかしのぎ、HP回復"
+}
